@@ -26,8 +26,8 @@ class $entityName;format="Camel"$Actor(name: String)
 
   override def receiveRecover: Receive = {
 
-    case s: Option[$entityName;format="Camel"$ @unchecked] => {
-      state = s
+    case $entityName;format="Camel,lower"$: $entityName;format="Camel"$ => {
+      state = Some($entityName;format="Camel,lower"$)
     }
 
     case SnapshotOffer(_, snapshot: Option[$entityName;format="Camel"$ @unchecked]) => {
