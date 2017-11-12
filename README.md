@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/navicore/akka-persistence-cassandra.g8.svg?branch=master)](https://travis-ci.org/navicore/akka-persistence-cassandra.g8)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cb845fd62c794295a9a5893f34ca9a7e)](https://www.codacy.com/app/navicore/akka-persistence-cassandra.g8?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/akka-persistence-cassandra.g8&amp;utm_campaign=Badge_Grade)
+
 A [g8] Template for an Akka HTTP API Server persisting objects with an Akka Persistence [plugin] for [Cassandra]
 ---
 
