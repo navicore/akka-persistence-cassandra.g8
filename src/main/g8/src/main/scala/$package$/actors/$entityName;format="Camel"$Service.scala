@@ -38,9 +38,10 @@ class $entityName;format="Camel"$Service(implicit timeout: Timeout)
       state = state.filter(n => n != deleteCmd.name)
       stopActor(deleteCmd.name)
 
-    case SnapshotOffer(_, snapshot: List[String @unchecked]) =>
+    case SnapshotOffer(_, snapshot: List[String @unchecked]) => {
       snapshot.foreach(create$entityName;format="Camel"$Actor)
       state = snapshot
+    }
 
     case _: RecoveryCompleted =>
       logger.info("$entityName;format="Camel,lower"$ service recovery completed")

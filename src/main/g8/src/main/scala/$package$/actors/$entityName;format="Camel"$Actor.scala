@@ -26,10 +26,13 @@ class $entityName;format="Camel"$Actor(name: String)
 
   override def receiveRecover: Receive = {
 
-    case $entityName;format="Camel,lower"$: $entityName;format="Camel"$ =>
-      state = Some($entityName;format="Camel,lower"$)
+    case s: Option[$entityName;format="Camel"$ @unchecked] => {
+      state = s
+    }
 
-    case SnapshotOffer(_, snapshot: $entityName;format="Camel"$) => state = Some(snapshot)
+    case SnapshotOffer(_, snapshot: Option[$entityName;format="Camel"$ @unchecked]) => {
+      state = snapshot
+    }
 
     case _: RecoveryCompleted =>
       logger.info(s"$entityName;format="Camel,lower"$ \$name recovery completed")
