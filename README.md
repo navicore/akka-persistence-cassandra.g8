@@ -4,6 +4,8 @@
 A [g8] Template for an Akka HTTP API Server persisting objects with an Akka Persistence [plugin] for [Cassandra]
 ---
 
+## NOTE: todo: add example of schema-evolution-supporting serialization
+
 ## PREREQ
 
   * sbt >= 13.16
