@@ -17,8 +17,7 @@ val akkaVersion = "$akkaVersion$"
 val akkaHttpVersion = "$akkaHttpVersion$"
 val cassandraPluginsVersion = "$cassandraPluginsVersion$"
 
-libraryDependencies ++=
-  Seq(
+libraryDependencies ++= Seq(
     "ch.megard" %% "akka-http-cors" % "0.2.1",
 
     "ch.qos.logback" % "logback-classic" % "1.1.7",
@@ -41,7 +40,7 @@ libraryDependencies ++=
     "org.scalatest" %% "scalatest" % "3.0.1" % "test"
   )
 
-dependencyOverrides ++= Set(
+dependencyOverrides ++= Seq(
   "com.typesafe.akka" %% "akka-actor"  % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion
 )
