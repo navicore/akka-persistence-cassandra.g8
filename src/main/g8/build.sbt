@@ -31,6 +31,10 @@ libraryDependencies ++= Seq(
     "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
     "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
 
+    // for mongodb api - works for cosmosdb
+    // "com.github.scullxbones" %% "akka-persistence-mongo-casbah" % "2.0.4",
+    // "org.mongodb" %% "casbah" % "3.1.1",
+
     "com.typesafe.akka" %% "akka-persistence-cassandra" % cassandraPluginsVersion,
     "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % cassandraPluginsVersion % "test",
 
