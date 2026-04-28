@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/akka-persistence-cassandra.g8](https://git.navicore.tech/navicore/akka-persistence-cassandra.g8).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 [![Build Status](https://travis-ci.org/navicore/akka-persistence-cassandra.g8.svg?branch=master)](https://travis-ci.org/navicore/akka-persistence-cassandra.g8)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cb845fd62c794295a9a5893f34ca9a7e)](https://www.codacy.com/app/navicore/akka-persistence-cassandra.g8?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/akka-persistence-cassandra.g8&amp;utm_campaign=Badge_Grade)
 
@@ -37,4 +42,3 @@ While changing the template, test using something like:
 ```console
 sbt new file:///Users/navicore/git/navicore/akka-persistence-cassandra.g8
 ```
-
